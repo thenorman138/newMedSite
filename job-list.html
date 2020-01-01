@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joobsy - Responsive Landing Page Tamplate</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Rubik:300,400,500" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!--Material Icon -->
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css" />
+
+    <!-- selectize css -->
+    <link rel="stylesheet" type="text/css" href="css/selectize.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" />
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar-->
+    <header id="topnav" class="defaultscroll scroll-active">
+        
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="images/lyleHealthBlue.svg" alt="" class="logo-dark" height="58"  width="250" />
+                    <img src="images/lyleHealthWhite.svg" alt="" class="logo-light" height="80" width="400" />
+                </a>
+            </div>
+            <!-- End Logo container-->
+            <div class="menu-extras">
+
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+            <div id="navigation">
+
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu">
+
+                    <li class="has-submenu">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="job-list.html">Search Jobs</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="post-a-job.html">Submit Referrals</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <!-- Need a PHP conditional here for logged in user to only see the logout button -->
+                    <!--  <a href="#logout" class=" btn btn-custom btn-sm" >Logout</a> -->
+                    <a href="#ModalCenter" class=" btn btn-custom btn-sm" data-toggle="modal" data-target="#ModalCenter">Login</a>
+                    <a href="#ModalCenter1" class=" btn btn-custom btn-sm" data-toggle="modal" data-target="#ModalCenter1">Register</a>
+
+                    <!-- <li class="has-submenu">
+                        <a href="#">Jobs</a>
+                        <span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="job-list.html">Job List</a>
+                            </li>
+                            <li>
+                                <a href="job-grid.html">Job Grid</a>
+                            </li>
+                            <li>
+                                <a href="job-details.html">Job Details</a>
+                            </li>
+                            <li>
+                                <a href="job-details-2.html">Job Details-2</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Candidates</a>
+                        <span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="candidates-listing.html">Candidates Listing</a>
+                            </li>
+                            <li>
+                                <a href="candidates-profile.html">Candidates Profile</a>
+                            </li>
+                            <li>
+                                <a href="create-resume.html">Create Resume</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Employers</a>
+                        <span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="employers-list.html">Employers List</a>
+                            </li>
+                            <li>
+                                <a href="company-detail.html">Company Detail</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Blog</a>
+                        <span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="blog-list.html">Blog List</a>
+                            </li>
+                            <li>
+                                <a href="blog-details.html">Blog Details</a>
+                            </li>
+                            <li>
+                                <a href="blog-grid.html">Blog Grid</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#">Pages</a>
+                        <span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="about.html">About us</a>
+                            </li>
+                            <li>
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li>
+                                <a href="team.html">Team</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">Faqs</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing plans</a>
+                            </li>
+                            <li>
+                                <a href="#ModalCenter" class="nav-link" data-toggle="modal" data-target="#ModalCenter">Log in</a>
+                            </li>
+                            <li>
+                                <a href="#ModalCenter1" class="nav-link" data-toggle="modal" data-target="#ModalCenter1">Register</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="contact.html">contact</a>
+                    </li>
+                    <a href="post-a-job.html" class="btn btn-custom btn-sm"><i class="mdi mdi-cloud-upload"></i> Post a Job</a> -->
+
+                </ul>
+                <!-- End navigation menu-->
+            </div>
+        </div>
+    </header>
+    <!-- End Navigation Bar-->
+
+    <!-- LOG IN FORM START -->
+    <section class="form-bg">
+        <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">LOG IN</h5>
+                        <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="custom-form mt-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-account text-muted f-17"></i>
+                                            <input name="name" id="name" type="text" class="form-control blog-details f-15 pt-2" placeholder="Username" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-lock text-muted f-17"></i>
+                                            <input name="Password" id="Password" type="Password" class="form-control blog-details f-15 pt-2" placeholder="Password" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">
+                                                <div class="custom-control custom-checkbox pl-0 mb-1 mt-1">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                    <label class="custom-control-label ml-1 text-muted f-15" for="customCheck1">Remember Me</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-inline-item float-right">
+                                                <p class="mb-0"><a href="" class="text-dark">Lost your password?</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-12 text-right">
+                                        <input type="submit" id="submit2" name="submit" class="btn-block btn btn-custom" value="Log In">
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- /form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- LOG IN FORM END -->
+
+    <!-- SING IN FORM START -->
+    <section class="form-bg">
+        <div class="modal fade" id="ModalCenter1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">REGISTER</h5>
+                        <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="text-center">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Candidate
+                            </label>
+
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Employer
+                            </label>
+                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-form mt-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-account text-muted f-17"></i>
+                                            <input name="name1" id="name1" type="text" class="form-control blog-details f-15 pt-2" placeholder="User Name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-email text-muted f-17"></i>
+                                            <input name="email" id="email" type="text" class="form-control blog-details f-15 pt-2" placeholder="Email" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-lock text-muted f-17"></i>
+                                            <input name="password1" id="password1" type="Password" class="form-control blog-details f-15 pt-2" placeholder="Password" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-lock text-muted f-17"></i>
+                                            <input name="confirm-password" id="confirm-password" type="Password" class="form-control blog-details f-15 pt-2" placeholder="Confirm Password" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">
+                                                <div class="custom-control custom-checkbox pl-0 mb-1 mt-1">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                    <label class="custom-control-label ml-1 text-muted f-15" for="customCheck2">Remember Me</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-inline-item float-right">
+                                                <p class="mb-0"><a href="" class="text-dark">Lost your password?</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-12 text-right">
+                                        <input type="submit" id="submit3" name="submit" class="btn-block btn btn-custom" value="Register Now">
+                                    </div>
+                                </div>
+
+                                <div class="job-single-or mt-4 mb-4 position-relative">
+                                    <h5 class="mb-0 text-dark text-center">OR</h5>
+                                </div>
+                                <ul class="list-inline text-center">
+                                    <li class="list-inline-item mr-1">
+                                        <a href="" class="text-white">
+                                            <div class="sing-form-icon bg-primary rounded">
+                                                <h6 class="mb-0"><i class="mdi mdi-facebook mr-1"></i>Facebook</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-inline-item mr-1">
+                                        <a href="" class="text-white">
+                                            <div class="sing-form-icon bg-info rounded">
+                                                <h6 class="mb-0"><i class="mdi mdi-twitter mr-1"></i>Twitter</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-inline-item mr-1">
+                                        <a href="" class="text-white">
+                                            <div class="sing-form-icon bg-danger rounded">
+                                                <h6 class="mb-0"><i class="mdi mdi-google-plus mr-1"></i>Google</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </form>
+                            <!-- /form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SING IN FORM END -->
+
+    <section class="page-header">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="page-header-title text-center text-white">
+                        <h4 class="text-uppercase">Search Jobs</h4>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+    <div class="container">
+        <div class="home-form-position">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="home-registration-form bg-white job-list-reg-form p-4 mb-3">
+                        <form class="registration-form">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="registration-form-box">
+                                        <i class="fa fa-list-alt"></i>
+                                        <select id="select-category" class="demo-default" placeholder="Categories...">
+                                            <option value="">Categories...</option>
+                                            <option value="4">MD</option>
+                                            <option value="1">Physician Assistant</option>
+                                            <option value="3">Nurse Practitioner</option>
+                                            <option value="5">CRNA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="registration-form-box">
+                                        <i class="fa fa-list-alt"></i>
+                                        <select id="select-specialty" class="demo-default" placeholder="Specialties...">
+                                            <option value="">Specialties...</option>
+                                            <option value="1">Allergy & Immunology</option>
+                                            <option value="2">Anesthesiology </option>
+                                            <option value="3">Cardiology</option>
+                                            <option value="4">Colon & Rectal Surgery</option>
+                                            <option value="5">Dermatology </option>
+                                            <option value="6">Emergency Medicine</option>
+                                            <option value="7">Endocrinology</option>
+                                            <option value="8">Family Medicine</option>
+                                            <option value="9">Gastroenterology</option>
+                                            <option value="10">General Surgery</option>
+                                            <option value="11">Geriatrics</option>
+                                            <option value="12">Hematology/Oncology</option>
+                                            <option value="13">Infectious Disease</option>
+                                            <option value="14">Internal Medicine </option>
+                                            <option value="15">Neonatology</option>
+                                            <option value="16">Nephrology</option>
+                                            <option value="17">Neurology</option>
+                                            <option value="18">Neurosurgery</option>
+                                            <option value="19">Nuclear Medicine</option>
+                                            <option value="20">Obstetrics & Gynecology </option>
+                                            <option value="21">Occupational Medicine</option>
+                                            <option value="22">Ophthalmology</option>
+                                            <option value="23">Oral & Maxillofacial Surgery</option>
+                                            <option value="24">Orthopaedic Surgery </option>
+                                            <option value="25">Otolaryngology</option>
+                                            <option value="26">Pain Management</option>
+                                            <option value="27">Palliative Care</option>
+                                            <option value="28">Pathology </option>
+                                            <option value="29">Pediatrics</option>
+                                            <option value="30">Physical Medicine & Rehabilitation </option>
+                                            <option value="31">Plastic Surgery </option>
+                                            <option value="32">Preventive Medicine</option>
+                                            <option value="33">Psychiatry</option>
+                                            <option value="34">Radiology</option>
+                                            <option value="35">Rheumatology</option>
+                                            <option value="36">Surgery </option>
+                                            <option value="37">Thoracic Surgery</option>
+                                            <option value="38">Urgent Care</option>
+                                            <option value="39">Urology </option>
+                                            <option value="40">Vascular Surgery</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="registration-form-box">
+                                        <i class="fa fa-location-arrow"></i>
+                                        <select id="select-state" class="demo-default" placeholder="Search Location...">
+                                            <option value="">Select Location...</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="registration-form-box">
+                                        <i class="fa fa-list-alt"></i>
+                                        <select id="select-referral" class="demo-default" placeholder="Referral fee...">
+                                            <option value="">Referral fee...</option>
+                                            <option value="1">Under $1,000</option>
+                                            <option value="2">$1,000 to $5,000</option>
+                                            <option value="3">$5,001 to $10,000</option>
+                                            <option value="4">$10,001 to $20,000</option>
+                                            <option value="4">$20,001 and above</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="registration-form-box">
+                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-custom btn-block" value="Submit">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JOB LIST START -->
+    <section class="section pt-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="title text-center mb-5">
+                        <h4>Available job for you</h4>
+                        <div class="title-icon position-relative">
+                            <i class="mdi mdi-chevron-down position-relative h3 text-custom bg-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="left-sidebar">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card mt-4">
+                                <a data-toggle="collapse" href="#collapseOne" class="job-list" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="card-header" id="headingOne">
+                                        <h6 class="mb-0 text-dark f-18">Date Posted</h6>
+                                    </div>
+                                </a>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                                    <div class="card-body p-0">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio1">Last Hour</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio2">Last 24 hours</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio3">Last 7 days</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio4">Last 14 days</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio5">Last 30 days</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- collapse one end -->
+                            <div class="card mt-4">
+                                <a data-toggle="collapse" href="#collapsetwo" class="job-list" aria-expanded="true" aria-controls="collapsetwo">
+                                    <div class="card-header" id="headingtwo">
+                                        <h6 class="mb-0 text-dark f-18">Categories</h6>
+                                    </div>
+                                </a>
+                                <div id="collapsetwo" class="collapse show" aria-labelledby="headingtwo">
+                                    <div class="card-body p-0">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio7" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio7">CRNA</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio8" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio8">MD</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio9" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio9">Physician Assistant</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio10" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio10">Nurse Practitioner</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- collapse one end -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="show-results mt-4">
+                                <div class="float-left">
+                                    <h5 class="text-dark mb-0 pt-2 f-18">Showing results 0-20</h5>
+                                </div>
+                                <div class="sort-button float-right">
+                                    <select class="nice-select">
+                                        <option data-display="Select">Nothing</option>
+                                        <option value="1">Web Developer</option>
+                                        <option value="2">PHP Developer</option>
+                                        <option value="3">Web Designer</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="job-list-box mt-4">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-1.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">Web Designer, Graphic Designer, UI/UX Designer & Art</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Web Themes.pvt.Ltd</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Confederate Drive Potsdam, NY 13676</p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>1 Minute ago</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Full-Time</span>
+
+                                                <div class="mt-3">
+                                                    <a href="#" class="apply-btn-sm btn-custom">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="job-list-box mt-4">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-2.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">PHP Developer, Team of PHP & IT Co</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Web Themescode.pvt.Ltd</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Rogers Street Cincinnati, OH 45202</p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>3 Minute ago</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                               <span class="badge badge-success">Part-Time</span>
+
+                                                <div class="mt-3">
+                                                    <a href="#" class="apply-btn-sm btn-custom">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="job-list-box mt-4">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-3.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">Website Developer & Software Developer</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Web Creative.pvt.Ltd</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Carolina Avenue Encinal, TX 78019</p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>5 Minute ago</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Full-Time</span>
+
+                                                <div class="mt-3">
+                                                    <a href="#" class="apply-btn-sm btn-custom">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="job-list-box mt-4">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-4.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">Head of Developers & MySQL Developers</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Design Brand.pvt.Ltd</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Holt Street West Palm Beach, FL 33401</p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>7 Minute ago</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Full-Time</span>
+
+                                                <div class="mt-3">
+                                                    <a href="#" class="apply-btn-sm btn-custom">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="job-list-box mt-4">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-5.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">Application Developer & Web Designer</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Web Coding.pvt.Ltd</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Stark Hollow Road Hillrose, CO 80733</p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>8 Minute ago</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                    <span class="badge badge-success">Part-Time</span>
+
+                                                <div class="mt-3">
+                                                    <a href="#" class="apply-btn-sm btn-custom">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="job-list-box mt-4">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-6.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">IT Department Manager & Blogger-Entrepenour</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Themes Brand.pvt.Ltd</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Riverside Drive Athens, GA 30606</p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>10 Minute ago</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Full-Time</span>
+
+                                                <div class="mt-3">
+                                                    <a href="#" class="apply-btn-sm btn-custom">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="job-list-box mt-4">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/img-7.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">Frontend/Backendd Developer</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Design Code.pvt.Ltd</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Rosemont Avenue Orlando, FL 32811</p>
+                                                    </li>
+
+                                                    <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>11 Minute ago</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Full-Time</span>
+
+                                                <div class="mt-3">
+                                                    <a href="#" class="apply-btn-sm btn-custom">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination job-pagination mt-5 justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                            <i class="mdi mdi-chevron-double-left f-15"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i class="mdi mdi-chevron-double-right f-15"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JOB LIST START -->
+
+   <!-- footer start -->
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div>
+                                <p class="text-white mb-4 footer-list-title f-17">Lyle Health, a Division of the Lyle Group, LLC</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div>
+                                <p class="text-white mb-4 footer-list-title f-17" style="text-align:center !important;">860.470.7611</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div>
+                                <p class="text-white mb-4 footer-list-title f-17">318 Main Street, Farmington,CT 06032</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- footer-alt start -->
+    <section class="footer-alt pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="copyright mb-0">2019 © Lyle Health</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer-alt end -->
+
+    <!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!-- selectize js -->
+    <script src="js/selectize.min.js"></script>
+
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

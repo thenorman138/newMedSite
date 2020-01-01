@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joobsy - Responsive Landing Page Tamplate</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Rubik:300,400,500" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!--Material Icon -->
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css" />
+
+    <!-- selectize css -->
+    <link rel="stylesheet" type="text/css" href="css/selectize.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" />
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script>
+    window.onload = function () {
+
+    var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        data: [{
+            type: "doughnut",
+            startAngle: 60,
+            //innerRadius: 60,
+            indexLabelFontSize: 17,
+            indexLabel: "{label} - #percent%",
+            toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+            dataPoints: [
+                { y: 67, label: "MD" },
+                { y: 28, label: "PA" },
+                { y: 10, label: "APRN" },
+                { y: 7, label: "CRNA"}
+            ]
+        }]
+    });
+    chart.render();
+
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar-->
+    <header id="topnav" class="defaultscroll scroll-active">
+        
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="images/lyleHealthBlue.svg" alt="" class="logo-dark" height="58"  width="250" />
+                    <img src="images/lyleHealthWhite.svg" alt="" class="logo-light" height="80" width="400" />
+                </a>
+            </div>
+            <!-- End Logo container-->
+            <div class="menu-extras">
+
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+            <div id="navigation">
+
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu">
+
+                    <li class="has-submenu">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="job-list.html">Search Jobs</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="post-a-job.html">Submit Referrals</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <!-- Need a PHP conditional here for logged in user to only see the logout button -->
+                     <a href="#logout" class=" btn btn-custom btn-sm" >Logout</a>
+<!--                     <a href="#ModalCenter" class=" btn btn-custom btn-sm" data-toggle="modal" data-target="#ModalCenter">Login</a>
+                    <a href="#ModalCenter1" class=" btn btn-custom btn-sm" data-toggle="modal" data-target="#ModalCenter1">Register</a> -->
+
+                    <!-- <li class="has-submenu">
+                        <a href="#">Jobs</a>
+                        <span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="job-list.html">Job List</a>
+                            </li>
+                            <li>
+                                <a href="job-grid.html">Job Grid</a>
+                            </li>
+                            <li>
+                                <a href="job-details.html">Job Details</a>
+                            </li>
+                            <li>
+                                <a href="job-details-2.html">Job Details-2</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Candidates</a>
+                        <span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="candidates-listing.html">Candidates Listing</a>
+                            </li>
+                            <li>
+                                <a href="candidates-profile.html">Candidates Profile</a>
+                            </li>
+                            <li>
+                                <a href="create-resume.html">Create Resume</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Employers</a>
+                        <span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="employers-list.html">Employers List</a>
+                            </li>
+                            <li>
+                                <a href="company-detail.html">Company Detail</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Blog</a>
+                        <span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="blog-list.html">Blog List</a>
+                            </li>
+                            <li>
+                                <a href="blog-details.html">Blog Details</a>
+                            </li>
+                            <li>
+                                <a href="blog-grid.html">Blog Grid</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#">Pages</a>
+                        <span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li>
+                                <a href="about.html">About us</a>
+                            </li>
+                            <li>
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li>
+                                <a href="team.html">Team</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">Faqs</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing plans</a>
+                            </li>
+                            <li>
+                                <a href="#ModalCenter" class="nav-link" data-toggle="modal" data-target="#ModalCenter">Log in</a>
+                            </li>
+                            <li>
+                                <a href="#ModalCenter1" class="nav-link" data-toggle="modal" data-target="#ModalCenter1">Register</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="contact.html">contact</a>
+                    </li>
+                    <a href="post-a-job.html" class="btn btn-custom btn-sm"><i class="mdi mdi-cloud-upload"></i> Post a Job</a> -->
+
+                </ul>
+                <!-- End navigation menu-->
+            </div>
+        </div>
+    </header>
+    <!-- End Navigation Bar-->
+
+    <!-- LOG IN FORM START -->
+    <section class="form-bg">
+        <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">LOG IN</h5>
+                        <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="custom-form mt-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-account text-muted f-17"></i>
+                                            <input name="name" id="name" type="text" class="form-control blog-details f-15 pt-2" placeholder="Username" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-lock text-muted f-17"></i>
+                                            <input name="Password" id="Password" type="Password" class="form-control blog-details f-15 pt-2" placeholder="Password" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">
+                                                <div class="custom-control custom-checkbox pl-0 mb-1 mt-1">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                    <label class="custom-control-label ml-1 text-muted f-15" for="customCheck1">Remember Me</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-inline-item float-right">
+                                                <p class="mb-0"><a href="" class="text-dark">Lost your password?</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-12 text-right">
+                                        <input type="submit" id="submit2" name="submit" class="btn-block btn btn-custom" value="Log In">
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- /form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- LOG IN FORM END -->
+
+    <!-- SING IN FORM START -->
+    <section class="form-bg">
+        <div class="modal fade" id="ModalCenter1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">REGISTER</h5>
+                        <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="text-center">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Candidate
+                            </label>
+
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Employer
+                            </label>
+                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-form mt-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-account text-muted f-17"></i>
+                                            <input name="name1" id="name1" type="text" class="form-control blog-details f-15 pt-2" placeholder="User Name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-email text-muted f-17"></i>
+                                            <input name="email" id="email" type="text" class="form-control blog-details f-15 pt-2" placeholder="Email" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-lock text-muted f-17"></i>
+                                            <input name="password1" id="password1" type="Password" class="form-control blog-details f-15 pt-2" placeholder="Password" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group blog-details-form">
+                                            <i class="mdi mdi-lock text-muted f-17"></i>
+                                            <input name="confirm-password" id="confirm-password" type="Password" class="form-control blog-details f-15 pt-2" placeholder="Confirm Password" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">
+                                                <div class="custom-control custom-checkbox pl-0 mb-1 mt-1">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                    <label class="custom-control-label ml-1 text-muted f-15" for="customCheck2">Remember Me</label>
+                                                </div>
+                                            </li>
+                                            <li class="list-inline-item float-right">
+                                                <p class="mb-0"><a href="" class="text-dark">Lost your password?</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm-12 text-right">
+                                        <input type="submit" id="submit3" name="submit" class="btn-block btn btn-custom" value="Register Now">
+                                    </div>
+                                </div>
+
+                                <div class="job-single-or mt-4 mb-4 position-relative">
+                                    <h5 class="mb-0 text-dark text-center">OR</h5>
+                                </div>
+                                <ul class="list-inline text-center">
+                                    <li class="list-inline-item mr-1">
+                                        <a href="" class="text-white">
+                                            <div class="sing-form-icon bg-primary rounded">
+                                                <h6 class="mb-0"><i class="mdi mdi-facebook mr-1"></i>Facebook</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-inline-item mr-1">
+                                        <a href="" class="text-white">
+                                            <div class="sing-form-icon bg-info rounded">
+                                                <h6 class="mb-0"><i class="mdi mdi-twitter mr-1"></i>Twitter</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-inline-item mr-1">
+                                        <a href="" class="text-white">
+                                            <div class="sing-form-icon bg-danger rounded">
+                                                <h6 class="mb-0"><i class="mdi mdi-google-plus mr-1"></i>Google</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </form>
+                            <!-- /form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SING IN FORM END -->
+
+    <section class="candidates-profile-bg">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="candidates-profile-details text-center">
+                        
+                        <h4 class="text-white candidates-profile-name mb-2">Welcome, Michael Brown</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+    <!-- CANDIDATES PROFILE START -->
+    <section class="section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-dark mt-4">At a Glance</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="text-center mt-4">
+                                <div class="skills chart" data-percent="80">
+                                    <div class="pie-chart-value">7</div>
+                                </div>
+                                <h5 class="text-muted mt-4 mb-0"># of Referrals</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="text-center mt-4">
+                                <div class="skills chart" data-percent="65">
+                                    <div class="pie-chart-value">2</div>
+                                </div>
+                                <h5 class="text-muted mt-4 mb-0">Offers Accepted</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="text-center mt-4">
+                                <div class="skills chart" data-percent="75">
+                                    <div class="pie-chart-value">4</div>
+                                </div>
+                                <h5 class="text-muted mt-4 mb-0">Interviews</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="text-center mt-4">
+                                <div class="skills chart" data-percent="90">
+                                    <div class="pie-chart-value">$18,000</div>
+                                </div>
+                                <h5 class="text-muted mt-4 mb-0">Money Earned</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height:100px;">
+                
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                        <h4 class="text-dark mt-4">Referrals by Category</h4>
+                </div>
+                <div class="col-lg-6">
+                        <h4 class="text-dark mt-4">Most Recent Referrals</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class=" candidates-profile-education text-center text-muted mb-5 mt-5">
+<!--                         <h6 class="text-uppercase f-17"><a href="#" class="text-muted">Referrals By Category</a></h6>
+ -->                        <div id="chartContainer" style="height: 350px; width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class=" candidates-profile-education text-center text-muted mb-5 mt-5">
+                    <table class="table">
+<!--                      <h6 class="text-uppercase f-17"><a href="#" class="text-muted">Most Recent Referrals</a></h6>
+ -->                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">Referral</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Jane Smith</td>
+                          <td>11/01/2019</td>
+                          <td>Active</td>
+                        </tr>
+                        <tr>
+                          <td>Tom Jones</td>
+                          <td>11/16/2019</td>
+                          <td>Active</td>
+                        </tr>
+                        <tr>
+                          <td>Larry Krasner</td>
+                          <td>12/16/2019</td>
+                          <td>Closed</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-dark mb-4" style="text-align:center !important;">Payouts</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                     <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">Referral Amount</th>
+                          <th scope="col">Referral</th>
+                          <th scope="col">Date Accepted</th>
+                          <th scope="col">Start Date</th>
+                          <th scope="col">Est Payout</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Paid Date</th>
+                          <th scope="col">Check #</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>$9,000</td>
+                            <td>Sam Jones</td>
+                            <td>09/01/2019</td>
+                            <td>12/01/2019</td>
+                            <td>12/15/2019</td>
+                            <td>Paid</td>
+                            <td>12/15/2019</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>$9,000</td>
+                            <td>Ben Ahn</td>
+                            <td>03/02/2019</td>
+                            <td>06/06/2019</td>
+                            <td>08/01/2019</td>
+                            <td>Paid</td>
+                            <td>08/03/2019</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div style="height:100px;">
+                
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-dark mb-4" style="text-align:center !important;">Referrals</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                     <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">Active/Closed</th>
+                          <th scope="col">Referral Date</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Category</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Employer</th>
+                          <th scope="col">Referral Amount</th>
+                          <th scope="col">Notes</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                            <td>Active  </td>
+                            <td>12/6/2019   </td>
+                            <td>Charlie Moore   </td>
+                            <td>MD  </td>
+                            <td>CV Sent </td>
+                            <td>YNHH     </td>
+                            <td>$5,000.00    </td>
+                            <td><a href="#">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Active  </td>
+                            <td>11/16/2019  </td>
+                            <td>Chris Smith </td>
+                            <td>MD  </td>
+                            <td>Interview   </td>
+                            <td>Johns Hopkins    </td>
+                            <td>$9,000.00    </td>
+                            <td><a href="#">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Active  </td>
+                            <td>11/1/2019   </td>
+                            <td>Ben Ahn </td>
+                            <td>MD  </td>
+                            <td>Offer   </td>
+                            <td>HCA  </td>
+                            <td>$12,000.00     </td>
+                            <td><a href="#">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Closed  </td>
+                            <td>5/1/2019    </td>
+                            <td>Tom Parker  </td>
+                            <td>PA  </td>
+                            <td>Closed  </td>
+                            <td>N/A </td>
+                            <td>N/A </td>
+                            <td><a href="#">Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Closed  </td>
+                            <td>4/1/2018    </td>
+                            <td>Sarah Jones </td>
+                            <td>CRNA    </td>
+                            <td>Closed  </td>
+                            <td>N/A </td>
+                            <td>N/A </td>
+                            <td><a href="#">Link</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CANDIDATES PROFILE END -->
+
+    <!-- footer start -->
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div>
+                                <p class="text-white mb-4 footer-list-title f-17">Lyle Health, a Division of the Lyle Group, LLC</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div>
+                                <p class="text-white mb-4 footer-list-title f-17" style="text-align:center !important;">860.470.7611</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div>
+                                <p class="text-white mb-4 footer-list-title f-17">318 Main Street, Farmington,CT 06032</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- footer-alt start -->
+    <section class="footer-alt pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="copyright mb-0">2019 © Lyle Health</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer-alt end -->
+
+    <!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+    <!-- selectize js -->
+    <script src="js/selectize.min.js"></script>
+
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('.chart').easyPieChart({
+                //your configuration goes here
+            });
+        });
+    </script>
+
+</body>
+</html>
